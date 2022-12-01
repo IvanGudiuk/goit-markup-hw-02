@@ -14,6 +14,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--first-text-color);
 }
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -32,8 +33,7 @@ body {
   list-style: none;
 }
 /* Підсвічення поточної сторинки сайту */
-.nav-item > .current {
-  text-decoration: underline;
+.nav-item .current {
   color: var(--accent-color);
 }
 .heading {
@@ -67,6 +67,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: inherit;
+  cursor: pointer;
 }
 .contact-item a {
   font-weight: 500;
@@ -79,7 +80,6 @@ body {
 a:focus,
 .contact-item a:hover,
 a:focus {
-  text-decoration: underline;
   color: var(--accent-color);
 }
 /* Фільтр для вибору робіт студії */
@@ -87,10 +87,10 @@ a:focus {
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  cursor: pointer;
   color: inherit;
 }
-.btn:hover {
+.btn:hover,
+.btn:focus {
   color: var(--text-color-on-bkg);
   background-color: var(--accent-color);
 }
@@ -115,6 +115,7 @@ a:focus {
 }
 .card-list-item h3 {
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
@@ -139,4 +140,11 @@ footer .logo {
   letter-spacing: 0.03em;
   color: var(--text-color-on-bkg);
   text-decoration: none;
+}
+footer .contact-item > a {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
